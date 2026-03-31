@@ -4,7 +4,10 @@ Lab opens with a [quiz](#quiz) and then kicks off the [hackathon](#hackathon).
 
 To get the full point for the lab, you need to get Tasks 1-3 done during the lab. Tasks 4-5 must be finished by the usual deadline of Thursday 23:59.
 
-Use agents and LLMs throughout — for ideation, requirements, scaffolding code, and implementing.
+Each student build their own project:
+- Go from idea to a deployed product.
+- Use agents and LLMs throughout.
+
 
 **Task 1 (graded by TA after the lab).**
 Pen and paper quiz.
@@ -16,7 +19,7 @@ Pen and paper quiz.
 The project idea must:
 - Be something simple to build, clearly useful, and easy to explain;
 - Involve backend + db + web dashboard + user-facing agent;
-- Not be an LMS (different from the course project).
+- Not be an LMS (different from the course project), however you can use the course project as the coding base to iterate from.
 
 Define:
 - End users of the product
@@ -47,34 +50,26 @@ Give priority to features that deliver the most value to end users and are easie
 
 **Task 5.**
 Submit presentation with five slides:
-- Product title, your name, email, group
-- The problem you are solving and your end-user
-- How you built it
-- Video demo with live commentaries (<2 mins)
-- Links to try.
 
-
-Submit on Moodle a 5-minute presentation with five slides:
-
-- Title slide:
+1. Title:
   - Product title
   - Your name
   - Your university email
   - Your group
 
-- Context slide(s):
+2. Context:
   - Your end users
   - The problem of end users you are solving
   - Your solution
 
-- Implementation slide(s):
+3. Implementation:
   - How you built the product
 
-- Demo slide(s):
+4. Demo:
   - Pre-recorded demo with live commentaries (no longer than 2 minutes)
   - _Note:_ This is the most important part of the presentation.
 
-- Final slide:
+5. Links:
   - Link and QR code for each of these:
     - The GitHub repo with the product code
     - Deployed product
