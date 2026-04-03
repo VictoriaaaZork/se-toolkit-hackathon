@@ -99,33 +99,33 @@ Submit a presentation with five slides:
 
 1. Title:
 
-- Product title
-- Your name
-- Your university email
-- Your group
+   - Product title
+   - Your name
+   - Your university email
+   - Your group
 
-1. Context:
+2. Context:
 
-- End-user of the product
-- What problem your product solves
-- The product idea in one short sentence
+   - End-user of the product
+   - What problem your product solves
+   - The product idea in one short sentence
 
-1. Implementation:
+3. Implementation:
 
-- How you built the product
-- What went into Version 1 and Version 2
-- What TA feedback points you addressed
+   - How you built the product
+   - What went into Version 1 and Version 2
+   - What TA feedback points you addressed
 
-1. Demo:
+4. Demo:
 
-- Pre-recorded video demonstration of Version 2 with voice-over (no longer than 2 minutes).
-- _Note:_ **This is the most important part of the presentation**.
+   - Pre-recorded video demonstration of Version 2 with voice-over (no longer than 2 minutes).
+   - _Note:_ **This is the most important part of the presentation**.
 
-1. Links:
+5. Links:
 
-- Link and QR code for each of these:
-  - The GitHub repo with the product code
-  - Deployed product (latest version)
+   - Link and QR code for each of these:
+     - The GitHub repo with the product code
+     - Deployed product (latest version)
 
 ----
 
