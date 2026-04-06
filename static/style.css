@@ -1,0 +1,140 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f6fb;
+  color: #1b1f2a;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+header p {
+  margin-top: 0;
+  color: #4f5b73;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dbe3f0;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.goal-form {
+  display: grid;
+  grid-template-columns: 1fr 140px auto;
+  gap: 10px;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border: 1px solid #cad5e8;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #2d63f2;
+  color: white;
+}
+
+button.secondary {
+  background: #eef2ff;
+  color: #1f3ea8;
+  border: 1px solid #c8d5ff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.message {
+  margin: 10px 0 0;
+  color: #b42318;
+  min-height: 1.2em;
+}
+
+.goal {
+  border: 1px solid #dbe3f0;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fafcff;
+}
+
+.goal-title {
+  margin: 0 0 10px;
+}
+
+.quest {
+  border: 1px solid #e2e8f6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: white;
+}
+
+.quest p {
+  margin: 0 0 8px;
+}
+
+.quest-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-wrap {
+  display: flex;
+  gap: 6px;
+}
+
+.badge {
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge.pending {
+  background: #fff4d6;
+  color: #8a5a00;
+}
+
+.badge.completed {
+  background: #dafbe1;
+  color: #0e5f28;
+}
+
+.badge.difficulty {
+  background: #eaf2ff;
+  color: #1f3ea8;
+}
+
+.next-quest-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}

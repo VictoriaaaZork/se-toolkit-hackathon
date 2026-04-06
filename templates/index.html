@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuestForge V2</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>QuestForge V2</h1>
+        <p>Generate non-repeating study quests with selectable difficulty.</p>
+      </header>
+
+      <section class="card">
+        <h2>Create a new goal</h2>
+        <div class="goal-form">
+          <input id="goalInput" type="text" placeholder="e.g. Master algebra basics in 2 weeks" />
+          <select id="difficultyInput">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <button id="createGoalBtn">Create quest</button>
+        </div>
+        <p id="message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Your goals</h2>
+        <div id="goalsList" class="goals"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
