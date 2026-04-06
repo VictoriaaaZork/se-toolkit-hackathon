@@ -3,8 +3,8 @@
 A web app that helps students build study habits with small, structured quests.
 
 ## Demo
-- Screenshot 1: goal creation + first quest
-- Screenshot 2: complete quest + generate next quest
+- Screenshot 1: goal creation + first quest generation
+- Screenshot 2: quest completion + next quest generation
 - Screenshot 3: difficulty-based quests in history
 
 ## Product context
@@ -12,47 +12,50 @@ A web app that helps students build study habits with small, structured quests.
 ### End users
 - Students preparing for exams and coursework.
 
-### Problem
+### Problem that your product solves
 - Students have vague study goals and struggle with consistency.
+- They need clear, short, actionable tasks.
 
-### Solution
-- Convert a big study goal into one concrete 2040 minute quest, let the user complete it, and generate the next one.
+### Your solution
+- User enters a study goal.
+- System generates one concrete 2040 minute quest.
+- User marks quest as completed and generates next quests.
+- Difficulty levels and non-repeating logic improve study progression.
 
 ## Features
 
 ### Implemented
-- Create a study goal
+- Create goal
 - Generate first quest
-- Mark quest completed
 - Generate next quest
-- Difficulty selection: easy / medium / hard
-- Non-repeating quest generation logic
-- FastAPI backend + SQLite DB + web client (HTML/CSS/JS)
+- Mark quest as completed
+- Difficulty selection (easy/medium/hard)
+- Non-repeating quest generation
+- FastAPI + SQLite + plain HTML/CSS/JS
 
 ### Not yet implemented
 - Authentication
 - Multi-user support
+- Notifications/reminders
 - Progress analytics dashboard
-- Reminder notifications
 
 ## Usage
-1. Open the web app.
-2. Enter a study goal.
-3. Select difficulty.
-4. Click **Create quest**.
-5. Click **Complete** when done.
-6. Select difficulty and click **Generate next quest**.
+1. Enter a study goal.
+2. Choose difficulty.
+3. Click **Create quest**.
+4. Complete quest.
+5. Generate next quest with selected difficulty.
 
 ## Deployment
 
 ### VM OS
 - Ubuntu 24.04
 
-### What to install
+### What should be installed
+- git
 - python3
 - python3-venv
 - python3-pip
-- git
 
 ### Step-by-step deployment
 ```bash
@@ -64,6 +67,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 cp .env.example .env
-# set OPENAI_API_KEY / OPENAI_MODEL / OPENAI_BASE_URL in .env
+# set OPENAI_API_KEY / OPENAI_MODEL / OPENAI_BASE_URL
 
 uvicorn main:app --host 0.0.0.0 --port 8000
