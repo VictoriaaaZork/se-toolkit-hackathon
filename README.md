@@ -4,19 +4,22 @@ A web app that helps students build study habits with small, structured quests.
 
 ## Demo
 - Screenshot 1: goal creation + first quest generation
+- ![Overview](images/demo-1-overview.png)
 - Screenshot 2: quest completion + next quest generation
+- ![Create goal](images/demo-2-create-goal.png)
 - Screenshot 3: difficulty-based quests in history
+- ![Goals list](images/demo-2-goals-list.png)
 
 ## Product context
 
 ### End users
 - Students preparing for exams and coursework.
 
-### Problem that your product solves
+### Problem that my product solves
 - Students have vague study goals and struggle with consistency.
 - They need clear, short, actionable tasks.
 
-### Your solution
+### My solution
 - User enters a study goal.
 - System generates one concrete 2040 minute quest.
 - User marks quest as completed and generates next quests.
