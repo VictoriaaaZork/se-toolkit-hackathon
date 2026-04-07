@@ -1,0 +1,14 @@
+services:
+  questforge:
+    build: .
+    container_name: questforge_v2
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - questforge_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  questforge_data:
