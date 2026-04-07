@@ -49,27 +49,33 @@ A web app that helps students build study habits with small, structured quests.
 4. Complete quest.
 5. Generate next quest with selected difficulty.
 
-## Deployment
+## Deployment (Docker, Ubuntu 24.04)
 
 ### VM OS
 - Ubuntu 24.04
 
-### What should be installed
+### Prerequisites
+- docker.io
+- docker compose plugin
 - git
-- python3
-- python3-venv
-- python3-pip
+
+Install Docker:
+```bash
+sudo apt update
+sudo apt install -y docker.io docker-compose-plugin
+sudo systemctl enable --now docker
+docker --version
+docker compose version
 
 ### Step-by-step deployment
-```bash
 git clone https://github.com/VictoriaaaZork/se-toolkit-hackathon.git
 cd se-toolkit-hackathon
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
 cp .env.example .env
-# set OPENAI_API_KEY / OPENAI_MODEL / OPENAI_BASE_URL
+# set OPENAI_API_KEY / OPENAI_MODEL / OPENAI_BASE_URL in .env
 
-uvicorn main:app --host 0.0.0.0 --port 8000
+docker compose up -d --build
+docker compose ps
+docker compose logs --tail=100
+##Health check
+curl -i http://127.0.0.1:8000/api/goals
