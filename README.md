@@ -77,5 +77,6 @@ cp .env.example .env
 docker compose up -d --build
 docker compose ps
 docker compose logs --tail=100
-##Health check
+
+###Health check
 curl -i http://127.0.0.1:8000/api/goals
